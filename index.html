@@ -401,13 +401,233 @@
     -->
     <form action="/action">
         <label for="first-name">First name:</label>
-        <input type="text" name="first-name" id="first-name" placeholder="Enter Your First Name">
+        <input type="text" name="first-name" id="first-name" placeholder="Enter Your First Name"> <br>
+        <label for="last-name">Last Name:</label>
+        <input type="text" name="last-name" id="last-name" placeholder="Enter Your Last Name"><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Enter Email"><br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" placeholder="Enter Password"> <br>
+        <button>Submit</button> <!-- Advides -->
+
+        <!-- 
+            <button type="button">Hello</button>
+            <button type="reset">Reset Me</button><br>
+            <input type="button" value="Click me">
+            <input type="submit">
+        -->
+    </form>
+    <hr>
+    <!--
+        Name Attribute 
+        - use to pass information to backend with a name which going to make sense 
+    -->
+
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query" id="" placeholder="search on youtube">
+        <button>Search</button>
+    </form><br>
+    <hr>
+
+    <!--
+        Practice Qs - 08
+        - Create a search option that redirects it's search request to google 
+    -->
+
+    <h4>Practice Qs - 08:</h4>
+    <form action="https://www.google.com/search">
+        <input type="text" name="q" id="" placeholder="Search on Gogle">
+        <button>Search</button>
+    </form><br>
+
+    <form action="https://www.reddit.com/r/search">
+        <input type="text" name="q" id="" placeholder="Search On Redit!">
+        <button>Search</button>
+    </form>
+    <br>
+    <hr>
+
+    <!--
+        Input Checked 
+    -->
+    <form action="/">
+        <input type="checkbox" name="age" id="age" checked>
+        <label for="age">I am 18+</label>
+        <button>Submit</button>
     </form>
 
     <!--
-        Button Element
-        -
+        Radio - Input Element 
     -->
+    <form action="/">
+        <input type="radio" name="fruit" id="apple" value="apple">
+        <label for="apple">Apple</label>
+        <input type="radio" name="fruit" id="banana" value="banana">
+        <label for="banana">Banana</label>
+        <input type="radio" name="fruit" id="grape" value="grape">
+        <label for="grape">Grape</label>
+        <button>Submit</button>
+    </form><br>
+
+    <!-- 
+        Select Input
+    -->
+    <form action="/">
+        <select name="profession" id="profession">
+            <option value="default" selected>Chose Your Profession</option>
+            <option value="Student">Student</option>
+            <option value="Developer">Developer</option>
+            <option value="sales-spacialist">Sales Specialist</option>
+        </select>
+        <button>Submipt</button>
+    </form>
+
+    <!--
+        Range Input 
+    -->
+    <form action="/">
+        <label for="vol">Select Your Volum level</label>
+        <input type="range" name="voulum" id="vol">
+        <button>submit</button>
+    </form>
+
+    <!-- 
+        Text Area 
+    -->
+    <form action="/">
+        <label for="feedback">Write your message here.</label><br>
+        <textarea name="feedback" id="feedback" cols="20" rows="5" placeholder="start here..."></textarea><br>
+        <button>Submit</button>
+    </form>
+
+    <br>
+    <hr>
+    <h4>Registration Form</h4>
+    <form action="/">
+        <div>
+            <input type="text" name="first_name" id="first_name" placeholder="First Name">
+            <input type="text" name="last_name" id="last_name" placeholder="Last Name">
+        </div>
+        <div>
+            <label for="gender">Please select your gender</label>
+            <select name="gender" id="gender">
+                <option value="default">Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Others</option>
+            </select>
+        </div>
+        <div>
+            Do you agree to all terms of service?
+            <input type="checkbox" name="agree" id="agree">
+            <label for="agree">Yes, I agree</label><br>
+        </div>
+        <button>Register</button>/
+    </form>
+
+    <br>
+    <hr><br>
+    <!--
+        Assignment of Level 03
+    -->
+    <table border="Black">
+        <caption>Student Infromation</caption>
+        <tr>
+            <th rowspan="6">Info</th>
+            <th rowspan="2">Name</th>
+            <th colspan="2">Address</th>
+        </tr>
+        <tr>
+            <th>City</th>
+            <th>House</th>
+        </tr>
+        <tr>
+            <td>A</td>
+            <td>Delhi</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>B</td>
+            <td>Mumbai</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>C</td>
+            <td>Kolkata</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>D</td>
+            <td>Pune</td>
+            <td>4</td>
+        </tr>
+    </table><br><br>
+
+    <form action="/action">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div>
+            Sex:
+            <input type="radio" name="gender" id="gender" value="male">
+            <label for="gender">Male</label>
+            <input type="radio" name="gender" id="gender" value="female">
+            <label for="gender">Female</label>
+        </div>
+        <div>
+            <label for="country">Country:</label>
+            <select name="country" id="country">
+                <option value="default" selected>Select an option</option>
+                <option value="UK">United Kingdom</option>
+                <option value="USA">United State Of Aerica</option>
+                <option value="BD">Bangaldesh</option>
+                <option value="Dubai">Dubai</option>
+                <option value="portugal">Portugal</option>
+            </select>
+        </div>
+        <div>
+            <label for="msg">Message:</label><br>
+            <textarea name="msg" id="msg" cols="20" rows="5"></textarea>
+        </div>
+        <div>
+            <input type="checkbox" name="subscribe" id="subscribe">
+            <label for="subscribe">Subscribe?</label>
+        </div>
+        <button>Submit</button>
+    </form>
+    <br><br>
+    <h4>Feedback Form</h4>
+    <form action="/action">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Write your name">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Write your email">
+        </div>
+        <div>
+            <label for="msg">Message:</label><br>
+            <textarea name="msg" id="msg" cols="20" rows="5"></textarea>
+        </div>
+        <div>
+            Rage us out of 5: <br>
+            <input type="radio" name="rating" id="1" value="1">
+            <label for="1">1</label><br>
+            <input type="radio" name="rating" id="2" value="2">
+            <label for="2">2</label><br>
+            <input type="radio" name="rating" id="3" value="3">
+            <label for="3">3</label> <br>
+            <input type="radio" name="rating" id="4" value="4">
+            <label for="4">4</label> <br>
+            <input type="radio" name="rating" id="5" value="5">
+            <label for="5">5</label>
+        </div>
+        <button>Send your Message!</button>
+    </form>
+
 
 </body>
+
 </html>
